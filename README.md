@@ -111,3 +111,19 @@ Ensure you have **Python 3.8+** and **PostgreSQL** installed and running on your
 5.  Type out a basic, unrefined prompt in the chat input.
 6.  Select your desired **Mode** pill from the injected panel, then click **⚡ Optimize Prompt** (or press `Alt + Shift + O`).
 7.  Verify, tweak, copy, or click **✓ Use This Prompt** to overwrite the input text box!
+
+---
+
+## 📦 How to Install from GitHub Releases
+
+If you want to install and run the extension without setting up a full development environment:
+
+1. Go to the **Releases** section of this repository and download the latest `extension.zip` file.
+2. Extract the downloaded `.zip` file on your machine.
+3. Open Google Chrome and navigate to `chrome://extensions/`.
+4. Enable **Developer Mode** by toggling the switch in the top-right corner.
+5. Click **Load unpacked** in the top-left corner.
+6. Select the extracted `extension` folder.
+7. Pin the **PromptBoost AI** extension to your Chrome toolbar.
+
+
