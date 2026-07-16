@@ -48,7 +48,7 @@ Ensure you have **Python 3.8+** and **PostgreSQL** installed and running on your
 
 1.  **Clone the repository & navigate to the backend:**
     ```bash
-    git clone https://github.com/yourusername/promptboost-ai.git
+    git clone https://github.com/Priyanshurajanand/promptboost-ai.git
     cd promptboost-ai/backend
     ```
 
