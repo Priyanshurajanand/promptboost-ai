@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PromptBoost AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">
+      <div class="logo-icon">⚡</div>
+      <div class="logo-text">
+        <span class="brand-name">PromptBoost</span>
+        <span class="brand-tag">AI</span>
+      </div>
+    </div>
+    <div class="status-badge" id="statusBadge">
+      <span class="status-dot" id="statusDot"></span>
+      <span id="statusText">Offline</span>
+    </div>
+  </div>
+
+  <!-- Auth Panel -->
+  <div class="card" id="authPanel">
+    <p class="card-subtitle">Sign in to optimize your prompts</p>
+
+    <div class="form-group">
+      <label class="form-label" for="email">Email</label>
+      <input class="form-input" type="email" id="email" placeholder="you@example.com" autocomplete="email" />
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="password">Password</label>
+      <input class="form-input" type="password" id="password" placeholder="••••••••" autocomplete="current-password" />
+    </div>
+
+    <div id="authMessage" class="auth-message hidden"></div>
+
+    <div class="btn-group">
+      <button class="btn btn-primary" id="loginBtn">
+        <span class="btn-icon">→</span> Login
+      </button>
+      <button class="btn btn-secondary" id="registerBtn">Register</button>
+    </div>
+  </div>
+
+  <!-- Logged In Panel -->
+  <div class="card hidden" id="loggedInPanel">
+    <div class="user-info">
+      <div class="user-avatar" id="userAvatar">P</div>
+      <div>
+        <div class="user-email" id="userEmail">user@example.com</div>
+        <div class="user-role">Pro Member</div>
+      </div>
+    </div>
+
+    <div class="feature-list">
+      <div class="feature-item">
+        <span class="feature-icon">✓</span>
+        <span>Optimization active on all AI sites</span>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">✓</span>
+        <span>6 modes: Default, Creative, Technical…</span>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">✓</span>
+        <span>Right-click any text → Optimize</span>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">✓</span>
+        <span>Keyboard shortcut: <kbd>Alt+Shift+O</kbd></span>
+      </div>
+    </div>
+
+    <button class="btn btn-outline" id="logoutBtn">Sign Out</button>
+  </div>
+
+  <!-- History Panel -->
+  <div class="history-panel hidden" id="historyPanel">
+    <div class="history-header">
+      <span class="section-label">Recent Prompts</span>
+      <button class="btn-text-danger" id="clearHistoryBtn">Clear all</button>
+    </div>
+    <div class="history-list" id="historyList">
+      <div class="history-empty">No prompts optimized yet</div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <span>Powered by</span>
+    <span class="groq-badge">⚡ Groq</span>
+    <span class="footer-divider">·</span>
+    <span class="version-badge">v3.0</span>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
